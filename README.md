@@ -1,6 +1,6 @@
 # crypto-esb_api_iroha
 
-REST api for Iroha blockchain. based in nodejs library.
+REST api for Iroha blockchain. based in nodejs library and express js.
 
 To test the rest services in postman, just import the file iroha.postman_collection.json in example folder
 

@@ -1,3 +1,3 @@
 # crypto-esb_api_iroha
 
-API de Crypto-ESB Core para comunicación con Ihora.
+rest api for Iroha blockchain.

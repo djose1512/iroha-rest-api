@@ -1,2 +1,3 @@
-# iroha-rest-api
-iroha rest api for iroha BLOCKCHAIN, based in nodejs library.
+# crypto-esb_api_iroha
+
+API de Crypto-ESB Core para comunicación con Ihora.

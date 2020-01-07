@@ -1,0 +1,1 @@
+To test the rest services in postman, just import the file iroha.postman_collection.json

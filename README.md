@@ -2,13 +2,15 @@
 
 REST api for Iroha blockchain. based in nodejs library.
 
+To test the rest services in postman, just import the file iroha.postman_collection.json in example folder
+
 how to use:
 
 ## 1.
 //the default parameters of the official iroha container are currently set
 
 in files routes/iroha.js and queries.js update.
-const adminPriv = 'privateKeu';
+const adminPriv = 'privateKey';
 const masterUser = 'admin@test' //user for uso comands and querys. see https://iroha.readthedocs.io/en/latest/develop/api/permissions.html#list-of-permissions
 
 ## 2. update in files routes/iroha.js and queries.js update. 

@@ -4,19 +4,25 @@ REST api for Iroha blockchain. based in nodejs library.
 
 how to use:
 
-##1.
+## 1.
 //the default parameters of the official iroha container are currently set
 
 in files routes/iroha.js and queries.js update.
 const adminPriv = 'privateKeu';
 const masterUser = 'admin@test' //user for uso comands and querys. see https://iroha.readthedocs.io/en/latest/develop/api/permissions.html#list-of-permissions
 
-##2. update in files routes/iroha.js and queries.js update. 
+## 2. update in files routes/iroha.js and queries.js update. 
 commandService and queryService with ip and port of iroha torii server. 
 
-##3.ENJOY
+## 3.Inside directory
 
+cd src/
+index.js 
 
+-or
+npm run dev
+
+## 4.ENJOY
 
 status of queries and commands ready for use:
 			

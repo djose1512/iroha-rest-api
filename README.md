@@ -14,7 +14,7 @@ const masterUser = 'admin@test' //user for uso comands and querys. see https://i
 ## 2. update in files routes/iroha.js and queries.js update. 
 commandService and queryService with ip and port of iroha torii server. 
 
-## 3.Inside directory
+## 3.RUN: Inside directory
 
 cd src/
 index.js 

@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "a3a252df-cd1f-4aa5-a7cf-2a084ad02a40",
+		"name": "iroha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/iroha/commands/account/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "method",
+							"value": "createAccount",
+							"type": "text"
+						},
+						{
+							"key": "publicKey",
+							"value": "e3d0943b58ebc6aec81361b95aa64a8fc39a423a8a40038d911af6bf1cad91e3",
+							"type": "text"
+						},
+						{
+							"key": "domain",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "accountName",
+							"value": "8336",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/iroha/commands/account/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"iroha",
+						"commands",
+						"account",
+						""
+					]
+				},
+				"description": "createaccount"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/iroha/queries/getAccountAssets/?accountId=admin@test&pageSize=10&firstAssetId=bitcoin#test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/iroha/queries/getAccountAssets/?accountId=admin@test&pageSize=10&firstAssetId=bitcoin#test",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"iroha",
+						"queries",
+						"getAccountAssets",
+						""
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "admin@test"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						},
+						{
+							"key": "firstAssetId",
+							"value": "bitcoin"
+						}
+					],
+					"hash": "test"
+				},
+				"description": "getAccountAssets obtiene los balances"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/iroha/commands/account/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "method",
+							"value": "setAccountDetail",
+							"type": "text"
+						},
+						{
+							"key": "key",
+							"value": "rif",
+							"type": "text"
+						},
+						{
+							"key": "value",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "accountId",
+							"value": "admin@test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/iroha/commands/account/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"iroha",
+						"commands",
+						"account",
+						""
+					]
+				},
+				"description": "setAccountDetail guarda informacion de una cuenta\n"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/iroha/queries/getAccountAssetTransactions/?accountId=admin@test&pageSize=10&assetId=coin%23test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/iroha/queries/getAccountAssetTransactions/?accountId=admin@test&pageSize=10&assetId=coin%23test",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"iroha",
+						"queries",
+						"getAccountAssetTransactions",
+						""
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "admin@test"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						},
+						{
+							"key": "assetId",
+							"value": "coin%23test"
+						},
+						{
+							"key": "assetDomain",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "getAccountAssetTransactions obtejene las transacciones por moneda\n"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/iroha/queries/fetchCommits/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/iroha/queries/fetchCommits/?",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"iroha",
+						"queries",
+						"fetchCommits",
+						""
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "admin@test",
+							"disabled": true
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"disabled": true
+						},
+						{
+							"key": "firstAssetId",
+							"value": "bitcoin",
+							"disabled": true
+						}
+					]
+				},
+				"description": "fetchCommits obitiene la ultima transaccion\n"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/iroha/commands/account/transferAsset",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "srcAccountId",
+							"value": "admin@test",
+							"type": "text"
+						},
+						{
+							"key": "destAccountId",
+							"value": "1111@test",
+							"type": "text"
+						},
+						{
+							"key": "assetId",
+							"value": "coin#test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/iroha/commands/account/transferAsset",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"iroha",
+						"commands",
+						"account",
+						"transferAsset"
+					]
+				},
+				"description": "transferAsset transfiere un saldo\n"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/iroha/queries/getAccountTransactions/?accountId=admin@test&pageSize=5&firstTxHash=",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/iroha/queries/getAccountTransactions/?accountId=admin@test&pageSize=5&firstTxHash=",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"iroha",
+						"queries",
+						"getAccountTransactions",
+						""
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "admin@test"
+						},
+						{
+							"key": "pageSize",
+							"value": "5"
+						},
+						{
+							"key": "firstTxHash",
+							"value": ""
+						}
+					]
+				},
+				"description": "getAccountTransactions obtiene todaas las transcciones de una cuenta.\n"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

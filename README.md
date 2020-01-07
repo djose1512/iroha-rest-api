@@ -5,8 +5,8 @@ REST api for Iroha blockchain. based in nodejs library.
 status of queries and commands ready for use:
 			
 querys:
-    Get Account		
-	Get Signatories		
+    # Get Account		
+	# Get Signatories		
 	Get Transactions		Ready
 	Get Pending Transactions		
 	Get Account Asset Transactions		Ready

@@ -18,6 +18,10 @@ commandService and queryService with ip and port of iroha torii server.
 
 ## 3.RUN: Inside directory
 
+cd ./iroha-rest-api
+
+npm install
+
 cd src/
 index.js 
 

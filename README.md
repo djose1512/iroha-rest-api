@@ -33,7 +33,7 @@ npm run dev
 status of queries and commands ready for use:
 			
 **querys:** 
-- Get Account		
+- Get Account **Ready**		
 - Get Signatories		
 - Get Transactions **Ready**
 - Get Pending Transactions		

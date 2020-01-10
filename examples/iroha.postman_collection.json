@@ -331,6 +331,53 @@
 				"description": "getAccountTransactions obtiene todaas las transcciones de una cuenta.\n"
 			},
 			"response": []
+		},
+		{
+			"name": "192.168.0.4:3000/api/iroha/queries/getAccount/?accountId=admin@test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.0.4:3000/api/iroha/queries/getAccount/?accountId=admin@test",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"4"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"iroha",
+						"queries",
+						"getAccount",
+						""
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "admin@test"
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"disabled": true
+						},
+						{
+							"key": "assetId",
+							"value": "coin%23test",
+							"disabled": true
+						},
+						{
+							"key": "assetDomain",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "getAccoun"
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}

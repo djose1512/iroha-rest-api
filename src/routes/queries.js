@@ -121,6 +121,27 @@ routerQueries.get('/getAccountAssetTransactions', (req, res) => {
   })
 });
 
+//RUTAS getAccount
+routerQueries.get('/getAccount', (req, res) => {
+  console.log(req.query.accountId);
+  queries.getAccount({
+    privateKey: adminPriv,
+    creatorAccountId: masterUser,
+    queryService,
+    timeoutLimit: 5000
+  }, {
+    accountId: req.query.accountId
+  }).then(result => {
+    res.json(result);
+  }).catch(error => {
+    resultGrpc = { status: "error", message: error.toString() };
+    console.log(typeof (error));
+    console.log(Object.keys(error));
+    console.log(JSON.stringify(error));
+    res.status(500).json(resultGrpc);
+  })
+});
+
 // Service fetchCommits
 var resp;
 queries.fetchCommits(

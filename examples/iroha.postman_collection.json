@@ -378,6 +378,45 @@
 				"description": "getAccoun"
 			},
 			"response": []
+		},
+		{
+			"name": "localhost:3000/api/iroha/queries/getTransactions?txHashesList=656da2464dccb1402813db83275de094928e2ffa5a6fc4262aeed20c921de5bd&txHashesList=e12c12b384f141df5d194dae7fcbd7148e1dc5afd214c6feda4e9e2833bb920e",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/iroha/queries/getTransactions?txHashesList=656da2464dccb1402813db83275de094928e2ffa5a6fc4262aeed20c921de5bd&txHashesList=e12c12b384f141df5d194dae7fcbd7148e1dc5afd214c6feda4e9e2833bb920e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"iroha",
+						"queries",
+						"getTransactions"
+					],
+					"query": [
+						{
+							"key": "txHashesList",
+							"value": "656da2464dccb1402813db83275de094928e2ffa5a6fc4262aeed20c921de5bd"
+						},
+						{
+							"key": "txHashesList",
+							"value": "e12c12b384f141df5d194dae7fcbd7148e1dc5afd214c6feda4e9e2833bb920e"
+						}
+					]
+				},
+				"description": "getTransaction"
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}

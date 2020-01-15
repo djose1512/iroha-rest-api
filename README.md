@@ -36,7 +36,7 @@ status of queries and commands ready for use:
 - Get Account **Ready**		
 - Get Signatories		
 - Get Transactions **Ready**
-- Get Pending Transactions		
+- Get Pending Transactions 		
 - Get Account Asset Transactions **Ready**
 - Get Account Assets **Ready**
 - Get Account Detail	

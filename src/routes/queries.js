@@ -144,7 +144,13 @@ routerQueries.get('/getAccount', (req, res) => {
 
 //RUTAS getTransactions
 routerQueries.get('/getTransactions', (req, res) => {
-  console.log("txt: ",req.query.txHashesList);
+  console.log("txt: ", typeof(req.query.txHashesList));
+  if (typeof(req.query.txHashesList)=="string") {
+    var arrC = new Array();
+    arrC.push(req.query.txHashesList);
+    console.log("txt2: ", arrC);
+    req.query.txHashesList = arrC;
+  }
   queries.getTransactions({
     privateKey: adminPriv,
     creatorAccountId: masterUser,
